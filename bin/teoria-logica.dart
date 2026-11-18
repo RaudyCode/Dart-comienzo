@@ -194,7 +194,7 @@ int suma2(int a, int b) => (a+b);
  */
 
 // operadores logico ejemplos
-void main(){
+/**void main(){
   var edad = 18;
 
   if (edad == 18){
@@ -212,7 +212,7 @@ void main(){
   barato = precio < 500 ? true : false;
 
   print(barato);
-}
+}*/
 
 // operadores de asignacion
 /**
@@ -222,3 +222,44 @@ void main(){
  * -=
  * 
  */
+// bucles 
+
+// bucle for
+void main(){
+  for (var i = 0; i <= 10; i++) {
+    print(i);
+  }
+
+  // forEach
+  var lista = [0,3,5,6,7];
+
+  // for normal
+  for(var item in lista){
+    print(item);
+  }
+
+  // forEach
+  lista.forEach((item) => print(item));
+
+
+  // bucle while y Do while
+  print("// bucle while y Do while");
+
+  var estado = false;
+  dynamic cont = 0;
+  while (estado == false){
+    cont++;
+    print("Hola");
+    if(cont == 5){
+      break;
+    }
+    
+  }
+
+do {
+  print("Hola Do");
+  break;
+} while (estado == false);
+}
+
+
