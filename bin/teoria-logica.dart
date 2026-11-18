@@ -118,9 +118,55 @@ void main(){
 
 }*/
 
-void main(){
+// operadores aricmeticos
+
+
+/**void main(){
   var n1 = 5;
   var n2 = 9;
   var resultados = n1 + n2;
   print(resultados);
+}*/
+// funciones
+void main(){
+  var resultados = suma(6, 4);
+  print(resultados);
+
+  saludar("Raudy");
+
+  saludar2();
+
+  // para imprimir el dato debes ser especifico
+  saludar2(nombre: "Pepe");
+
+  //required
+  // si no le pasas el valor dara error porque es obligatorio
+  saludar3(nombre: "Bralquis");
+
+  // funciones de flecha 
+  var resultado = suma2(6, 6);
+  print(resultado);
 }
+//funciones
+int suma(int a, int b){
+  return a + b;
+}
+
+// funciones que no retornan nada usas void
+void saludar(dynamic nombre){
+  print("Hola, $nombre. como estas?");
+}
+
+// para que acepte datos null
+void saludar2({String? nombre}){
+  print("Hola, $nombre. como estas?");
+}
+
+// para que sea obligatorio pasar el valor usas required
+void saludar3({required String nombre}){
+  print("Hola, $nombre. como estas?");
+}
+
+
+// funciones de flecha o arrow funtion
+int suma2(int a, int b) => (a+b);
