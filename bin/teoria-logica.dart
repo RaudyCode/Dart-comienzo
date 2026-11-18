@@ -128,7 +128,7 @@ void main(){
   print(resultados);
 }*/
 // funciones
-void main(){
+/**void main(){
   var resultados = suma(6, 4);
   print(resultados);
 
@@ -170,3 +170,55 @@ void saludar3({required String nombre}){
 
 // funciones de flecha o arrow funtion
 int suma2(int a, int b) => (a+b);
+
+*/
+
+/**
+ * 
+ * Teoria sobre operadores relacionales y logicos
+ * 
+ * == igual que
+ * != distinto que
+ * < menor que 
+ * <= menor igual que
+ * > mayor que
+ * >= mayor igual que
+ * 
+ * 
+ * operadores logicos
+ * 
+ * || Or(o)
+ * && And(y)
+ * ! negacion
+ * 
+ */
+
+// operadores logico ejemplos
+void main(){
+  var edad = 18;
+
+  if (edad == 18){
+    print("Tu edad es la adecuada puedes entrar");
+  }else if(edad == 15){
+    print("Buen intento pero aun eres un crio!");
+  }else{
+    print("Vete a dormir Bebe.");
+  }
+
+  // operador ternario
+  var precio = 500;
+  var barato = null;
+
+  barato = precio < 500 ? true : false;
+
+  print(barato);
+}
+
+// operadores de asignacion
+/**
+ * a = 2
+ * += para suma a + 5 = 7 - a+=5 
+ * /=
+ * -=
+ * 
+ */
