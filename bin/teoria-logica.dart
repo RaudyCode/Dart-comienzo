@@ -225,7 +225,7 @@ int suma2(int a, int b) => (a+b);
 // bucles 
 
 // bucle for
-void main(){
+/**void main(){
   for (var i = 0; i <= 10; i++) {
     print(i);
   }
@@ -262,4 +262,55 @@ do {
 } while (estado == false);
 }
 
+*/
 
+// switch
+void main(){
+   var item = "close";
+   switch (item){
+    case 'close':
+      print("caso 1");
+      break;
+    case 'abierto':
+      print("caso 2");
+      break;
+    default:
+      print("ningun caso");
+
+   }
+
+   // manejo de excepciones, dar retro alimentacion de errores try catch
+   String mensaje = "hola";
+   try {
+     print(mensaje[5]);
+   } catch (e) {
+     print(e);
+   }
+
+   // clases en dart
+  final pikachu = new Pokemon(name: "Pikachu", tipo: "Electrico");
+  print(pikachu);
+  print(pikachu.name);
+  print(pikachu.tipo);
+
+}
+
+/** clases en dart
+class Pokemon {
+  late String name;
+  late String tipo;
+  Pokemon({String name="null", String tipo="null"}){
+    this.name =name;
+    this.tipo = tipo;
+  }
+  String toString() {
+    return "Nombre: ${this.name} - Tipo: ${this.tipo}";
+  } 
+}*/
+// optimizando una clase
+class Pokemon {
+  late String name;
+  late String tipo;
+  Pokemon({this.name="null", this.tipo="null"});
+  String toString() => "Nombre: ${this.name} - Tipo: ${this.tipo}"; 
+}
